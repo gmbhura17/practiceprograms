@@ -204,7 +204,7 @@ class _ViewState extends State<View> {
                                           //         builder: (context) => UpdatePage(updateid: id)));
                                           var id = snapshots.data[index]["tid"].toString();
                                           Navigator.of(context).push(
-                                              MaterialPageRoute( builder: (context) => UpdatePage())
+                                              MaterialPageRoute( builder: (context) => UpdatePage(updateid: id,))
                                           );
 
                                         },
